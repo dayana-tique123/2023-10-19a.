@@ -18,3 +18,21 @@ function comer(){
 
 
 }
+function nuevoregistro(){
+    $salida=0;//inicializar la variable
+    
+    $conexion=mysqli_connect('localhost','root','','proyecto_tours_people');//conectar con la base de datos
+    
+    $sql="select 2+1 as suma";
+    $resultado=$conexion->query($sql);
+    //recorre el recordset
+     while($fila=mysqli_fetch_assoc($resultado))
+     {
+        //incluye o acumula
+
+        $salida += $fila['suma'];
+     }
+
+
+    return $salida;//retornar la operación
+}

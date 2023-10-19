@@ -1,7 +1,11 @@
 <?php
 //incluir el archivo funciones
 include("funciones.php");
-//se invoca la funcion para una consulta
 echo consulta();
-//se inicializa función comer
+
+//se invoca la funcion para una consulta
 echo comer();
+echo "<br>";
+//se inicializa función comer
+echo nuevoregistro();
+//inicializar la función nuevoregistro
